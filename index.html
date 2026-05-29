@@ -1,1 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <!-- Vinculação do arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Cabeçalho Principal -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>Agro<span>Sustentável</span></h1>
+        </div>
+        <!-- Menu de Navegação -->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#pilares">Pilares</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- Botão de Alternância do Modo Escuro -->
+            <button id="theme-toggle" class="btn-theme" aria-label="Alternar tema">🌙 Modo Escuro</button>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal do Site -->
+    <main>
+        
+        <!-- Seção Hero (Introdução) -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-content">
+                <h2>Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</h2>
+                <p>Descubra como a tecnologia e as práticas ecológicas estão transformando o agronegócio moderno em uma força aliada da preservação.</p>
+                <button id="cta-btn" class="btn-primary">Saiba Mais</button>
+                <div id="dynamic-message" class="message-box hidden"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Pilares (Conteúdo e Grid/Flexbox) -->
+        <section id="pilares" class="pillars-section">
+            <div class="section-title">
+                <h3>Nossos Pilares</h3>
+                <p>O equilíbrio perfeito entre produtividade no campo e respeito à biodiversidade.</p>
+            </div>
+            
+            <div class="cards-container">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="https://unsplash.com" alt="Tecnologia no campo">
+                    <h4>Tecnologia Verde</h4>
+                    <p>Uso de drones e sensores para otimizar o consumo de água e reduzir o uso de defensivos químicos.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="https://unsplash.com" alt="Preservação ambiental">
+                    <h4>Conservação</h4>
+                    <p>Práticas de rotação de culturas e plantio direto que mantém os nutrientes do solo e protegem nascentes.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card">
+                    <img src="https://unsplash.com" alt="Energia limpa no agro">
+                    <h4>Energia Limpa</h4>
+                    <p>Fazendas movidas a energia solar e biomassa, reduzindo a pegada de carbono da produção de alimentos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato (Formulário com Validação) -->
+        <section id="contato" class="contact-section">
+            <div class="form-container">
+                <h3>Una-se ao Movimento</h3>
+                <p>Receba informativos e cases de sucesso sobre o agronegócio sustentável.</p>
+                
+                <form id="agro-form">
+                    <div class="input-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" placeholder="Seu nome completo">
+                    </div>
+                    <div class="input-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" placeholder="Seu melhor e-mail">
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Cadastro</button>
+                </form>
+                <div id="form-feedback" class="feedback-msg"></div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 AgroSustentável. Todos os direitos reservados.</p>
+        <p>Desenvolvido focado em um futuro equilibrado.</p>
+    </footer>
+
+    <!-- Vinculação do arquivo JavaScript externo -->
+    <script src="script.js"></script>
+</body>
+</html>
